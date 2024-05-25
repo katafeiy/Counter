@@ -58,7 +58,6 @@ class ViewController: UIViewController {
     
     private func updateCounterValve(){
         counterValve.text = ("\(counter)")
-    }
-        
+    }        
 }
 
