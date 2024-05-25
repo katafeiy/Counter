@@ -2,7 +2,7 @@
 //  CounterTests.swift
 //  CounterTests
 //
-//  Created by Константин Филиппов on 26.05.2024.
+//  Created by Константин Филиппов on 24.05.2024.
 //
 
 import XCTest
