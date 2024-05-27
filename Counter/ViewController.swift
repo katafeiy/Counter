@@ -16,31 +16,31 @@ class ViewController: UIViewController {
     }
     var date: String {return DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .medium)}
     
-    @IBOutlet weak var counterValve: UILabel!
-    @IBOutlet weak var changeValve: UITextView!
+    @IBOutlet weak var counterValue: UILabel!
+    @IBOutlet weak var changeValue: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        counterValve.text = ("\(counter)")
-        changeValve.text = ("История изменений:\n")
-        changeValve.isEditable = false
+        counterValue.text = ("\(counter)")
+        changeValue.text = ("История изменений:\n")
+        changeValue.isEditable = false
         
     }
     
     @IBAction func counterPlus(_ sender: Any) {
         counter += 1
-        changeValve.text += ("[\(date)]: значение изменено на +1\n")
+        changeValue.text += ("[\(date)]: значение изменено на +1\n")
         print("\(date) Значение счетчика: \(counter)")
     }
-
+    
     @IBAction func counterMinus(_ sender: Any) {
         if counter > 0 {
             counter -= 1
-            changeValve.text += ("[\(date)]: значение изменено на -1\n")
+            changeValue.text += ("[\(date)]: значение изменено на -1\n")
             print("\(date) Значение счетчика: \(counter)")
         } else {
-            changeValve.text += ("[\(date)]: попытка уменшить значение счетчика ниже 0\n")
+            changeValue.text += ("[\(date)]: попытка уменшить значение счетчика ниже 0\n")
             print("\(date) Попытка уменшить значение счетчика ниже 0")
         }
         
@@ -48,16 +48,16 @@ class ViewController: UIViewController {
     
     @IBAction func counterClean(_ sender: Any) {
         counter = 0
-        changeValve.text += ("[\(date)]: значение сброшено\n")
+        changeValue.text += ("[\(date)]: значение сброшено\n")
         print("\(date) Значение сброшено")
     }
     
-    @IBAction func consolClean(_ sender: Any) {
-        changeValve.text = ("История изменений:\n")
+    @IBAction func consoleClean(_ sender: Any) {
+        changeValue.text = ("История изменений:\n")
     }
     
     private func updateCounterValve(){
-        counterValve.text = ("\(counter)")
-    }        
+        counterValue.text = ("\(counter)")
+    }
 }
 
