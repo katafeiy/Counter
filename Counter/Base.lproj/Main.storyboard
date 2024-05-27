@@ -17,81 +17,104 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="black" text="История изменений:" translatesAutoresizingMaskIntoConstraints="NO" id="PLB-Lf-8Vm">
-                                <rect key="frame" x="16" y="111" width="361" height="541"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счетчика:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bC-hv-8oe" userLabel="Label Valve">
+                                <rect key="frame" x="16" y="47" width="358" height="45"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTh-hb-eZC">
+                                <rect key="frame" x="208" y="47" width="154" height="45"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" text="История изменений:" translatesAutoresizingMaskIntoConstraints="NO" id="PLB-Lf-8Vm">
+                                <rect key="frame" x="16" y="100" width="358" height="594"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CL8-0b-eSR">
-                                <rect key="frame" x="200" y="666" width="176" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.0" green="0.1022562769" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <imageReference key="image" image="minus.square" catalog="system" variableValue="0.80000000000000004"/>
-                                    <color key="baseForegroundColor" red="0.83964646470000004" green="0.015719619210000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="baseBackgroundColor" red="0.0" green="0.1022562769" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="counterMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndk-yL-glh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qET-zj-0Qq">
-                                <rect key="frame" x="16" y="727" width="176" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.096748101810000001" green="0.3517203283" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="trash" catalog="system"/>
-                                <connections>
-                                    <action selector="counterClean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3eU-mK-8NI"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Значение счетчика:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bC-hv-8oe" userLabel="Label Valve">
-                                <rect key="frame" x="16" y="59" width="361" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTh-hb-eZC">
-                                <rect key="frame" x="265" y="59" width="112" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGJ-FQ-hDB">
-                                <rect key="frame" x="200" y="727" width="176" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.1036400745" green="0.37677556820000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="arrow.uturn.backward" catalog="system"/>
-                                <connections>
-                                    <action selector="consolClean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PM4-X6-emO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYy-n6-Jbb">
-                                <rect key="frame" x="16" y="666" width="176" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <imageReference key="image" image="plus.app" catalog="system" symbolScale="large"/>
-                                    <color key="baseForegroundColor" red="0.0" green="0.031183650689999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="baseBackgroundColor" red="0.83964646470000004" green="0.015719619210000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="counterPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MSy-6i-b6e"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0pT-Vw-IX0">
+                                <rect key="frame" x="16" y="702.66666666666663" width="358" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="10" horizontalCompressionResistancePriority="10" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYy-n6-Jbb" userLabel="ButtonRed">
+                                        <rect key="frame" x="0.0" y="0.0" width="174" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <imageReference key="image" image="plus.app" catalog="system" symbolScale="large"/>
+                                            <color key="baseForegroundColor" red="0.0" green="0.031183650689999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" red="0.83964646470000004" green="0.015719619210000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="counterPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MSy-6i-b6e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="10" horizontalCompressionResistancePriority="10" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CL8-0b-eSR" userLabel="ButtonBlue">
+                                        <rect key="frame" x="184" y="0.0" width="174" height="34.333333333333336"/>
+                                        <color key="tintColor" red="0.0" green="0.1022562769" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <imageReference key="image" image="minus.square" catalog="system" variableValue="0.80000000000000004"/>
+                                            <color key="baseForegroundColor" red="0.83964646470000004" green="0.015719619210000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" red="0.0" green="0.1022562769" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="counterMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndk-yL-glh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VNF-VF-uKL">
+                                <rect key="frame" x="16" y="755.66666666666663" width="357.66666666666669" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qET-zj-0Qq" userLabel="ButtonGreenL">
+                                        <rect key="frame" x="0.0" y="0.0" width="174" height="34.333333333333336"/>
+                                        <color key="tintColor" red="0.096748101810000001" green="0.3517203283" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="trash" catalog="system"/>
+                                        <connections>
+                                            <action selector="counterClean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3eU-mK-8NI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGJ-FQ-hDB" userLabel="ButtonGreenR">
+                                        <rect key="frame" x="184" y="0.0" width="173.66666666666663" height="34.333333333333336"/>
+                                        <color key="tintColor" red="0.1036400745" green="0.37677556820000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="arrow.uturn.backward" catalog="system"/>
+                                        <connections>
+                                            <action selector="consolClean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PM4-X6-emO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.83964646470000004" green="0.015719619210000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4bC-hv-8oe" secondAttribute="trailing" constant="16" id="98z-Kp-LYA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PLB-Lf-8Vm" secondAttribute="trailing" constant="16" id="9tw-xw-OJN"/>
+                            <constraint firstItem="4bC-hv-8oe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DHz-DZ-pqJ"/>
+                            <constraint firstItem="PLB-Lf-8Vm" firstAttribute="top" secondItem="4bC-hv-8oe" secondAttribute="bottom" constant="8" symbolic="YES" id="DWc-fN-m8g"/>
+                            <constraint firstItem="VNF-VF-uKL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GDG-h3-dv6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VNF-VF-uKL" secondAttribute="bottom" constant="20" id="K8e-89-Ak1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0pT-Vw-IX0" secondAttribute="trailing" constant="16" id="MZ5-fo-kX8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PLB-Lf-8Vm" secondAttribute="bottom" constant="116" id="ZV1-xH-aYF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OTh-hb-eZC" secondAttribute="trailing" constant="28" id="kaf-YV-C8j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0pT-Vw-IX0" secondAttribute="bottom" constant="73" id="nqH-KT-gaK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VNF-VF-uKL" secondAttribute="trailing" constant="16.333333333333314" id="ryw-Hp-CPq"/>
+                            <constraint firstItem="OTh-hb-eZC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="208" id="sCM-4f-fr7"/>
+                            <constraint firstItem="PLB-Lf-8Vm" firstAttribute="top" secondItem="OTh-hb-eZC" secondAttribute="bottom" constant="8" symbolic="YES" id="sjh-ib-tXg"/>
+                            <constraint firstItem="OTh-hb-eZC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tDs-fA-gvg"/>
+                            <constraint firstItem="PLB-Lf-8Vm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="tTP-EA-fVD"/>
+                            <constraint firstItem="0pT-Vw-IX0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vAP-J1-u5u"/>
+                            <constraint firstItem="4bC-hv-8oe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yLo-mD-8Pi"/>
+                            <constraint firstItem="PLB-Lf-8Vm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zup-ZQ-RmO"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="changeValve" destination="PLB-Lf-8Vm" id="9KA-bQ-a9h"/>
@@ -100,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129.23076923076923" y="-34.834123222748815"/>
+            <point key="canvasLocation" x="-1620" y="-135.07109004739337"/>
         </scene>
     </scenes>
     <resources>
